@@ -4,3 +4,4 @@ description: >
    7 days, seven little projects.
    Each day learning something new.
 theme: jekyll-theme-midnight
+show_downloads: false
