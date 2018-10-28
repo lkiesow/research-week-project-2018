@@ -22,7 +22,8 @@ Let's get started.
 Schedule
 --------
 
-- Day 1: Android Development: Updating From 2.3
+- [Day 1: Android Development: Updating From 2.3
+  ](#android-development-updating-from-23)
 - Day 2: Kubernetes: Automatic Deployment at Scale.
 - Day 3: AWS, DigitalOcean and Azure: Looking at the Clouds
 - Day 4: Prometheus, Influx, Grafana & Co: Modern Monitoring
@@ -33,7 +34,7 @@ Schedule
 
 
 Android Development: Updating From 2.3
---------------------------------------
+======================================
 
 *Research topic for October 29, 2018*
 
