@@ -19,3 +19,33 @@ and finally, reporting my findings on this project blog.
 Let's get started.
 
 
+Schedule
+--------
+
+- Day 1: Android Development: Updating From 2.3
+- Day 2: Kubernetes: Automatic Deployment at Scale.
+- Day 3: AWS, DigitalOcean and Azure: Looking at the Clouds
+- Day 4: Prometheus, Influx, Grafana & Co: Modern Monitoring
+- Day 5: Micro Project with Micro-Controller: Playing with the EMP32
+- Day 6: Server Update: New Server Infrastructure.
+- Day 7: To be dertermined. [Any suggestion? Let me know!
+  ](https://twitter.com/intent/tweet?text=@larskiesow,%20look%20at%20this%20as%20part%20of%20your%20)
+
+
+Android Development: Updating From 2.3
+--------------------------------------
+
+*Research topic for October 29, 2018*
+
+The last time I developed a smartphone app was [back in 2014](https://github.com/lkiesow/andCA)
+with a project developed for Android version 2.3
+…some old folks might still remember that ;-)
+
+A lot has happened since then in mobile app development and I like to catch up.
+Hence, my first target for this day is to get an overview over recent
+development techniques.
+
+My second target is a bit more specific. That is to fix a bug in
+[Simple-Calendar](https://github.com/SimpleMobileTools/Simple-Calendar) and
+[FreeOTP+](https://github.com/helloworld1/FreeOTPPlus) each.
+Let's see how far my newfound knowledge can get me.
