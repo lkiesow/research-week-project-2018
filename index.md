@@ -30,7 +30,7 @@ Schedule
 - Day 5: Micro Project with Micro-Controller: Playing with the EMP32
 - Day 6: Server Update: New Server Infrastructure.
 - Day 7: To be dertermined. [Any suggestion? Let me know!
-  ](https://twitter.com/intent/tweet?text=@larskiesow,%20look%20at%20this%20as%20part%20of%20your%20)
+  ](https://twitter.com/intent/tweet?text=@larskiesow,%20look%20at%20this%20as%20part%20of%20your&hashtags=researchweek)
 
 
 Android Development: Updating From 2.3
