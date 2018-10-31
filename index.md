@@ -24,13 +24,13 @@ Schedule
 
 - [Day 1: Android Development: Updating From 2.3
   ](#android-development-updating-from-23)
-- [Day 2: Kubernetes: Automatic Deployment at Scale.
+- [Day 2-3: Kubernetes: Automatic Deployment at Scale.
   ](#kubernetes-automatic-deployment-at-scale)
-- Day 3: AWS, DigitalOcean and Azure: Looking at the Clouds
-- Day 4: Prometheus, Influx, Grafana & Co: Modern Monitoring
-- Day 5: Micro Project with Micro-Controller: Playing with the EMP32
-- Day 6: Server Update: New Server Infrastructure.
-- Day 7: To be dertermined. [Any suggestion? Let me know!
+- Day X: AWS, DigitalOcean and Azure: Looking at the Clouds
+- Day X: Prometheus, Influx, Grafana & Co: Modern Monitoring
+- Day X: Micro Project with Micro-Controller: Playing with the EMP32
+- Day X: Server Update: New Server Infrastructure.
+- Day X: To be dertermined. [Any suggestion? Let me know!
   ](https://twitter.com/intent/tweet?text=@larskiesow,%20look%20at%20this%20as%20part%20of%20your&hashtags=researchweek)
 
 
@@ -139,3 +139,67 @@ Today, Kubernetes is the de-facto standard when it comes to container orchestrat
 I've read about it, talked to people about it, I know what it is doing but…
 I've never actually used it.
 That's to be changed today!
+
+
+Getting Started
+---------------
+
+Looking around for resources, I ended up with the interactive
+[Kubernetes Basics Tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+of [kubernetes.io](https://kubernetes.io).
+Usually, I dislike long tutorials because I'm more a hands-on person
+but this tutorial does let you play with a real Kubernetes environment
+where you can ignore the instructions at any time to shortly try something else.
+
+I also found the online shell (including auto-completion) used for the tutorial a pleasant surprise.
+In short: I really recommend this tutorial to get started.
+
+
+### Non-Scaling Kubernetes
+
+Looking at Kubernetes, one of the first things you learn is that Kubernetes is really meant for larger systems, not for your one server at home:
+
+> A Kubernetes cluster that handles production traffic should have a minimum of three nodes.
+
+In a way, this makes sense because that will give you a failover e.g. if a node goes down or you have to run maintenance on it.
+It's also not that hard if you run in an agile, server-less environment by e.g. relying on one of the big cloud providers.
+Nevertheless, that does makes it hard to use in a small scale on your home server.
+
+Sure, there are a few solutions like kubeadm for [creating a single master cluster](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
+but options like these do not seem to be [stable](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#kubeadm-maturity) right now
+and in most cases (e.g. [minikube](https://kubernetes.io/docs/setup/minikube/)) are actually only meant for testing.
+
+For my upcoming server update, I'll hence likely not rely on Kubernetes.
+Nevertheless I will still use containers.
+I will also continue to look into this since even if you loose some of the high-availability features,
+a small scale Kubernetes will still provide you with a homogeneous deployment option for all types of setups.
+
+
+### Kubernetes @Work
+
+Looking at what I am usually doing at work and assessing the possibilities Kubernetes would provide,
+I think we would benefit quite a bit from using it.
+The main problem would likely be to convince University data-centers I usually work with
+to run a Kubernetes cluster.
+Weird as it may sound, I found them having a tendency to be extremely conservative
+and reluctant to introduce new technologies
+despite them being research institutions.
+
+Right now we are managing quite a number of virtual machines to run applications.
+A lot of these are really small applications (e.g. consider [docs.opencast.org](https://docs.opencast.org)
+which is barely more than a web-server with static content)
+and it really does not matter where they run.
+But right now, you always have to make a concious decision to either provision a new virtual machine for such a service
+or to bundle it with another service on a single machine.
+
+Not having to care about this would be great and would remove quite a bit of daily work while making hardware provisioning, etc. much easier.
+After all, we can easily replace a whole Node
+and Kubernetes will take care of the services running somewhere.
+
+
+### More Kubernetes
+
+Screw the schedule 😼
+I've decided to look into this a bit further.
+Certainly as part of the cloud provider test,
+but I will also try another local deployment.
