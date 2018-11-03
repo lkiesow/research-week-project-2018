@@ -18,26 +18,29 @@ and finally, reporting my findings on this project blog.
 
 Let's get started.
 
+*Update: With getting feedback on some projects I contributed within this week,
+needing to spend more time there and with finding more interesting parts in
+projects I looked into, I reconsidered my approach and decided to just ignore
+my schedule and go for a topic bacsed approach instead.*
 
-Schedule
---------
 
-- [Day 1: Android Development: Updating From 2.3
+Topics
+------
+
+- [Android Development: Updating From 2.3
   ](#android-development-updating-from-23)
-- [Day 2-3: Kubernetes: Automatic Deployment at Scale.
+- [Kubernetes: Automatic Deployment at Scale.
   ](#kubernetes-automatic-deployment-at-scale)
-- Day X: AWS, DigitalOcean and Azure: Looking at the Clouds
-- Day X: Prometheus, Influx, Grafana & Co: Modern Monitoring
-- Day X: Micro Project with Micro-Controller: Playing with the EMP32
-- Day X: Server Update: New Server Infrastructure.
-- Day X: To be dertermined. [Any suggestion? Let me know!
-  ](https://twitter.com/intent/tweet?text=@larskiesow,%20look%20at%20this%20as%20part%20of%20your&hashtags=researchweek)
+- AWS, DigitalOcean and Azure: Looking at the Clouds
+- Golang: Go, learn a new language
+- Prometheus, Influx, Grafana & Co: Modern Monitoring
+- Micro Project with Micro-Controller: Playing with the EMP32
 
 
 Android Development: Updating From 2.3
 ======================================
 
-*Research topic for October 29, 2018*
+*One day research topic for October 29, 2018*
 
 The last time I developed a smartphone app was [back in 2014](https://github.com/lkiesow/andCA)
 with a project developed for Android version 2.3
@@ -127,13 +130,9 @@ Poking around in its Kodlin source code, a language I hadn't worked with before 
 I finally managed to locate the problem and was able to produce a [very simple bug fix](https://github.com/SimpleMobileTools/Simple-Calendar/pull/684)
 for the problem.
 
-*That concludes day 1.*
-
 
 Kubernetes: Automatic Deployment at Scale
 =========================================
-
-*Research topic for October 30, 2018*
 
 Today, Kubernetes is the de-facto standard when it comes to container orchestration and deployment.
 I've read about it, talked to people about it, I know what it is doing but…
